@@ -2,7 +2,7 @@ from netmiko import ConnectHandler
 from jinja2 import Template
 import yaml
 
-devices_ip = ['172.31.102.4', '172.31.102.5', '172.31.102.6']
+devices_ip = ['172.31.114.4', '172.31.114.5', '172.31.114.6']
 username = 'admin'
 pri_key = 'id_rsa'
 # pri_key = '/home/devasc/.ssh/id_rsa'
