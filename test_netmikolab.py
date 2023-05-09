@@ -1,7 +1,7 @@
 from netmiko import *
 from netmikolab import *
 
-devices_ip = ['172.31.102.4', '172.31.102.5', '172.31.102.6']
+devices_ip = ['172.31.114.4', '172.31.114.5', '172.31.114.6']
 username = 'admin'
 pri_key = 'id_rsa'
 # pri_key = '/home/devasc/.ssh/id_rsa'
@@ -29,16 +29,16 @@ device_params3 = {
     }
 
 def test_ip():
-    assert get_ip(device_params1, 'G0/0') == '172.31.102.4'
-    assert get_ip(device_params1, 'G0/1') == '172.31.102.17'
+    assert get_ip(device_params1, 'G0/0') == '172.31.114.4'
+    assert get_ip(device_params1, 'G0/1') == '172.31.114.17'
     assert get_ip(device_params1, 'G0/2') == '172.31.102.34'
     assert get_ip(device_params1, 'G0/3') == "unassigned"
-    assert get_ip(device_params2, 'G0/0') == '172.31.102.5'
-    assert get_ip(device_params2, 'G0/1') == '172.31.102.33'
-    assert get_ip(device_params2, 'G0/2') == '172.31.102.50'
+    assert get_ip(device_params2, 'G0/0') == '172.31.114.5'
+    assert get_ip(device_params2, 'G0/1') == '172.31.114.33'
+    assert get_ip(device_params2, 'G0/2') == '172.31.114.50'
     assert get_ip(device_params2, 'G0/3') == "unassigned"
-    assert get_ip(device_params3, 'G0/0') == '172.31.102.6'
-    assert get_ip(device_params3, 'G0/1') == '172.31.102.49'
+    assert get_ip(device_params3, 'G0/0') == '172.31.114.6'
+    assert get_ip(device_params3, 'G0/1') == '172.31.114.49'
     assert get_ip(device_params3, 'G0/3') == "unassigned"
 
 def test_netmask():
