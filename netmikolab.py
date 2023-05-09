@@ -45,7 +45,7 @@ def get_status(device_params, int_name):
             return f"{des['status']}/{des['protocol']}"
 
 if __name__ == '__main__':
-    device_ip = '172.31.102.5'
+    device_ip = '172.31.114.5'
     username = 'admin'
     pri_key = 'id_rsa'
     pri_key = '/home/devasc/.ssh/id_rsa'
